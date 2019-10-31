@@ -1,0 +1,12 @@
+[package]
+name = "fractals"
+version = "0.1.0"
+authors = ["Paul D. Faria <Nashenas88@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+pixel-canvas = "0.2.0"
+colorbrewer = "0.1.0"
+winit = "0.20.0-alpha4"
+rayon = "1.2.0"
+structopt = "0.3.3"
