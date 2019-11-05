@@ -333,16 +333,3 @@ fn main() {
         }
     }
 }
-
-#[test]
-fn mandelbrot_test() {
-    let set = Mandelbrot::new(Point(0.0, 0.0)).generate(Point(0.5, 0.0));
-    for (left, right) in [0.5, 0.75, 1.0625, 1.62891]
-        .iter()
-        .zip(set.map(|Point(x, _)| x))
-    {
-        let val = left - right;
-        let val = val * val;
-        assert!(val < 0.001, format!("Expected {} to match {}", left, right));
-    }
-}
