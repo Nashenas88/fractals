@@ -10,3 +10,10 @@ colorbrewer = "0.1.0"
 winit = "0.20.0-alpha4"
 rayon = "1.2.0"
 structopt = "0.3.3"
+
+[lib]
+path="src/lib.rs"
+
+[[bin]]
+name="fractal"
+path="src/main.rs"
